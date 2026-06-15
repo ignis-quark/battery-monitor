@@ -1,0 +1,10 @@
+[Unit]
+Description=Battery Monitor Service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/battery_monitor.sh
+LogLevelMax=warning
+
+[Install]
+WantedBy=multi-user.target
