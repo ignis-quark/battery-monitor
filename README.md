@@ -9,8 +9,8 @@ Run the batmon_install.sh to easily install.
 Alternatively, do what's listed below by paw if you're paranoid.
 
 ### batmon_install.sh will do the following:
-Place battery_monitor.sh in /usr/local/bin/
-Place battery-monitor.service in /etc/systemd/system/
-Place battery-monitor.timer in /etc/systemd/system/
-Execute systemctl daemon-reload
-Execute systemctl enable battery-monitor.timer
+1.Place battery_monitor.sh in /usr/local/bin/
+2.Place battery-monitor.service in /etc/systemd/system/
+3.Place battery-monitor.timer in /etc/systemd/system/
+4.Execute systemctl daemon-reload
+5.Execute systemctl enable battery-monitor.timer
