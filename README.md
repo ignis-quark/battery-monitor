@@ -1,4 +1,5 @@
 # What does it do?
+It's a Linux laptop battery monitoring service.
 Runs a systemd service every 5 minutes (using a systemd timer) to check battery life.
 Gives a warning every 5 minutes at and below 10%, and shuts down the system at 5% (if discharging)
 
