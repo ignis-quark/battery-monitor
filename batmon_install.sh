@@ -1,8 +1,6 @@
 
 TEMP=$(getopt -o hu --long help,upgrade )
 
-UPGRADEONLY=false
-
 while true; do
     case "$1" in
         -h | --help )
