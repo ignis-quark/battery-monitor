@@ -13,7 +13,7 @@ STATE=$(upower -b | grep state | awk '{print $2}')
 if [[ "$STATE" == "discharging" ]]; then
     if [ "$PERCENT" -le "$CRITICAL_LEVEL" ]; then
         logger "BATTERY LEVEL CRITICAL! ${PERCENT}%! SHUTTING DOWN SYSTEM!"
-        #/usr/bin/systemctl poweroff
+        /usr/bin/systemctl poweroff
     elif [ "$PERCENT" -le "$WARNING_LEVEL" ]; then
         logger "Battery warning noted at ${PERCENT}%"
         
